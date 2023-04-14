@@ -7,11 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
     <title>Acosta Fuenmayos's Portfolio</title>
 </head>
-<body>
-    
+<body>    
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol id="check" viewBox="0 0 16 16">
         <title>Check</title>
@@ -23,7 +22,7 @@
       <header>
         <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
           <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-            <img src="assets/IMG/acostafue-icon.png" style="height: 25px; margin-right: 10px;">
+            <img src="assets/IMGS/acostafue-icon.png" style="height: 25px; margin-right: 10px;">
             <span class="fs-4">Portfolio</span>
           </a>
     
@@ -40,7 +39,53 @@
           <p class="fs-5 text-muted">This portfolio has the approach to show the knowlege earned in this few months in Desafio Latam, feel free to check any project</p>
         </div>
       </header>
-    
+      <div id="myCarousel" class="carousel slide pointer-event" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <div class="container">
+              <img src="assets/IMGS/carousel-personal-web.png" style="height: 700px;width: 100%;" alt="A personal web">
+              <div class="carousel-caption text-start">
+                <h1>Personal Web.</h1>
+                <p>A personal web.</p>
+                <p><a class="btn btn-lg btn-primary" href="https://github.com/luistaurik/fdsw-github-desafiolatam" target="_blank">Go</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="container">
+              <img src="assets/IMGS/carousel-carshop.png" style="height: 700px;width: 100%;" alt="A car shop website">
+              <div class="carousel-caption">
+                <h1>A car store project.</h1>
+                <p>One of the most popular projects.</p>
+                <p><a class="btn btn-lg btn-primary" href="https://github.com/luistaurik/DESAFIOLATAM-CSS" target="_blank">Go</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img src="assets/IMGS/carousel-expeditions-store.png" style="height: 700px;width: 100%;" alt="A expedition store website">
+              <div class="carousel-caption text-end">
+                <h1>An Expeditions Store.</h1>
+                <p>Showing the world how beautiful is my country.</p>
+                <p><a class="btn btn-lg btn-primary" href="https://github.com/luistaurik/DESAFIOLATAM-BOOSTRAP" target="_blank">Go</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       <main>
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
           <div class="col">
@@ -50,9 +95,10 @@
               </div>
               <div class="card-body">
                 <div>
-                    <a href="https://luistaurik.github.io/DESAFIOLATAM-HTML/" target="_blank"><img src="assets/IMG/HTML.png" class="card-img-top mb-4 img-project" alt="Project in html" height="250"></a>
+                    <a href="https://luistaurik.github.io/DESAFIOLATAM-HTML/" target="_blank"><img src="assets/IMGS/HTML.png" class="card-img-top mb-4 img-project" alt="Project in html" height="250"></a>
                 </div>
-                <a href="https://luistaurik.github.io/DESAFIOLATAM-HTML/" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Go to project</button></a>
+                <a href="https://luistaurik.github.io/DESAFIOLATAM-HTML/" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Go to web</button></a>
+                <a href="https://github.com/luistaurik/DESAFIOLATAM-HTML" target="_blank"><button type="button" class="w-100 btn btn-lg btn-dark mt-2">Go to project</button></a>
               </div>
             </div>
           </div>
@@ -63,9 +109,10 @@
               </div>
               <div class="card-body">
                 <div>
-                    <a href="https://luistaurik.github.io/DESAFIOLATAM-CSS/" target="_blank"><img src="assets/IMG/CSS.png" class="card-img-top mb-4 img-project" alt="Project in CSS" height="250"></a>
+                    <a href="https://luistaurik.github.io/DESAFIOLATAM-CSS/" target="_blank"><img src="assets/IMGS/CSS.png" class="card-img-top mb-4 img-project" alt="Project in CSS" height="250"></a>
                 </div>
-                <a href="https://luistaurik.github.io/DESAFIOLATAM-CSS/" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Go to project</button></a>
+                <a href="https://luistaurik.github.io/DESAFIOLATAM-CSS/" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Go to web</button></a>
+                <a href="https://github.com/luistaurik/DESAFIOLATAM-CSS" target="_blank"><button type="button" class="w-100 btn btn-lg btn-dark mt-2">Go to project</button></a>
               </div>
             </div>
           </div>
@@ -76,9 +123,10 @@
               </div>
               <div class="card-body">
                 <div>
-                    <a href="https://luistaurik.github.io/DESAFIOLATAM-POSICIONAR/" target="_blank"><img src="assets/IMG/POSITIONING.png" class="card-img-top mb-4 img-project" alt="Project in CSS positioning" height="250"></a>
+                    <a href="https://luistaurik.github.io/DESAFIOLATAM-POSICIONAR/" target="_blank"><img src="assets/IMGS/POSITIONING.png" class="card-img-top mb-4 img-project" alt="Project in CSS positioning" height="250"></a>
                 </div>
-                <a href="https://luistaurik.github.io/DESAFIOLATAM-POSICIONAR/" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Go to project</button></a>
+                <a href="https://luistaurik.github.io/DESAFIOLATAM-POSICIONAR/" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Go to web</button></a>
+                <a href="https://github.com/luistaurik/DESAFIOLATAM-POSICIONAR" target="_blank"><button type="button" class="w-100 btn btn-lg btn-dark mt-2">Go to project</button></a>
               </div>
             </div>
           </div>
@@ -91,9 +139,10 @@
                 </div>
                 <div class="card-body">
                   <div>
-                      <a href="https://luistaurik.github.io/DESAFIOLATAM-BOOSTRAP/" target="_blank"><img src="assets/IMG/BOOSTRAP.png" class="card-img-top mb-4 img-project" alt="Project in Boostrap" height="250"></a>
+                      <a href="https://luistaurik.github.io/DESAFIOLATAM-BOOSTRAP/" target="_blank"><img src="assets/IMGS/BOOSTRAP.png" class="card-img-top mb-4 img-project" alt="Project in Boostrap" height="250"></a>
                   </div>
-                  <a href="https://luistaurik.github.io/DESAFIOLATAM-BOOSTRAP/" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Go to project</button></a>
+                  <a href="https://luistaurik.github.io/DESAFIOLATAM-BOOSTRAP/" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Go to web</button></a>
+                  <a href="https://github.com/luistaurik/DESAFIOLATAM-BOOSTRAP" target="_blank"><button type="button" class="w-100 btn btn-lg btn-dark mt-2">Go to project</button></a>
                 </div>
               </div>
             </div>
@@ -104,9 +153,10 @@
                 </div>
                 <div class="card-body">
                   <div>
-                      <a href="https://luistaurik.github.io/fdsw-github-desafiolatam/" target="_blank"><img src="assets/IMG/PERSONALWEB.png" class="card-img-top mb-4 img-project" alt="Project personal web" height="250"></a>
+                      <a href="https://luistaurik.github.io/fdsw-github-desafiolatam/" target="_blank"><img src="assets/IMGS/PERSONALWEB.png" class="card-img-top mb-4 img-project" alt="Project personal web" height="250"></a>
                   </div>
-                  <a href="https://luistaurik.github.io/fdsw-github-desafiolatam/" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Go to project</button></a>
+                  <a href="https://luistaurik.github.io/fdsw-github-desafiolatam/" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Go to web</button></a>
+                  <a href="https://github.com/luistaurik/fdsw-github-desafiolatam" target="_blank"><button type="button" class="w-100 btn btn-lg btn-dark mt-2">Go to project</button></a>
                 </div>
               </div>
             </div>
@@ -117,9 +167,10 @@
                 </div>
                 <div class="card-body">
                   <div>
-                      <a href="#" target="_blank"><img src="assets/IMG/THISPROJECT.png" class="card-img-top mb-4 img-project" alt="this project" height="250"></a>
+                      <a href="#" target="_blank"><img src="assets/IMGS/THISPROJECT.png" class="card-img-top mb-4 img-project" alt="this project" height="250"></a>
                   </div>
-                  <a href="#"><button type="button" class="w-100 btn btn-lg btn-primary">Go to project</button></a>
+                  <a href="#"><button type="button" class="w-100 btn btn-lg btn-primary">Go to web</button></a>
+                  <a href="https://github.com/luistaurik/portfolio-challenge" target="_blank"><button type="button" class="w-100 btn btn-lg btn-dark mt-2">Go to project</button></a>
                 </div>
               </div>
             </div>
@@ -168,51 +219,6 @@
           </div>
         </div>        
       </main>
-      <section>
-        <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-        </div>
-    
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h1 class="display-4 fw-normal">My forks</h1>
-          <p class="fs-5 text-muted">Check my forks</p>
-        </div>
-    </section>
-    
-      <main>
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">FORK 1</h4>
-              </div>
-              <div class="card-body">
-                <a href="https://github.com/luistaurik/personal-website-by-github" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Go to fork</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">FORK 2</h4>
-              </div>
-              <div class="card-body">
-                <a href="https://luistaurik.github.io/website-simple-mobile-web-design/" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Go to project</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-hover-primary">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">FORK 3</h4>
-              </div>
-              <div class="card-body">
-                <a href="https://luistaurik.github.io/fdsw-github-desafiolatam/" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Go to project</button></a>
-              </div>
-            </div>
-          </div>
-        </div>        
-      </main>
-      
       <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
           <div class="col-12 col-md">
